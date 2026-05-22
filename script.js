@@ -258,7 +258,7 @@ startButton.onclick = async () => {
                     title: "Bonus",
                     intro:
                         "<p>Every point earns you a $0.01 bonus.</p>" +
-                        "<p>Get all 50 trials correct, and you will earn a total bonus of $0.50!</p>",
+                        `<p>Get all ${numTrial} trials correct, and you will earn a total bonus of $${(numTrial * 0.01).toFixed(2)}!</p>`,
                 },
                 {
                     title: "Trial",
@@ -276,7 +276,7 @@ startButton.onclick = async () => {
                 },
                 {
                     title: "Start",
-                    intro: "<p>Let's begin the experiment. Earn up to $0.50 bonus!</p>",
+                    intro: `<p>Let's begin the experiment. Earn up to $${(numTrial * 0.01).toFixed(2)} bonus!</p>`,
                 },
                 {
                     title: "Reminder",
